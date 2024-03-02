@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            height: 100vh;
+            background-color: lightblue;
+            color: rgb(29, 17, 17);
+            background: linear-gradient(45deg, orange, pink, purple); /* Sunset Gradient */
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.1rem;
+        }
+
+        .card {
+            padding: 20px;
+            width: 300px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: left;
+            align-items: center;
+            display: flex;
+            flex-direction: column; /* Added */
+            color: black;
+        }
+
+        input {
+            text-align: left;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            height: 30px;
+            width: calc(100% - 22px);
+            padding: 0 10px;
+        }
+
+        button {
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: lightcoral;
+            color: white;
+            height: 35px;
+            width: calc(100% - 22px);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: lightsalmon;
+        }
+
+        .link {
+            margin-top: 15px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="login" class="card">
+        <h2><i class="fas fa-key"></i> Log In</h2>
+        <form action="welcome.html" method="post">
+            <div class="form-group">
+                <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+                <input name="login-email" type="text" placeholder="Email" />
+            </div>
+            <div class="form-group">
+                <label for="password"><i class="fas fa-lock"></i> Password:</label>
+                <input name="login-password" type="password" placeholder="Password" />
+            </div>
+            <button type="submit">Log in</button>
+        </form>
+        <p class="link">
+            <!-- Add your desired link or action here -->
+            <p>Don't have an account?</p> <a href="register.html">register</a> 
+        </p>
+    </div>
+</body>
+</html>
+
+
