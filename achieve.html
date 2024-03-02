@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Card</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column; /* Change flex direction to column */
+            padding: 20px;
+        }
+
+        .card-item {
+            width: 100%;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            background: white;
+            transition: all 0.3s ease;
+            box-shadow: 0 20px 40px rgba(87, 84, 84, 0.328);
+            display: flex;
+            flex-direction: row; /* Change flex direction to row */
+        }
+
+        .card-item-right-image {
+            /* Image on the right side */
+            flex-direction: row-reverse; /* Reverse the order of flex items */
+        }
+
+        .card-item:hover {
+            box-shadow: 0 20px 40px rgba(16, 14, 14, 0.5);
+        }
+
+        .content {
+            padding: 1rem;
+            flex: 1; /* Allow content to take remaining width */
+        }
+
+        .image {
+            width: 200px; /* Set a fixed width for the image */
+            height: 150px;
+            border-top-right-radius: 8px; /* Change to top right */
+            border-bottom-right-radius: 8px; /* Change to bottom right */
+            position: relative;
+            transition: all 0.5s;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .image1 {
+            background-image: url('./christmas.jpg');
+            background-color: #e65b00;
+        }
+
+        .image2 {
+            background-image: url('./Onam.jpg');
+            background-color: #34a853;
+        }
+
+        .title {
+            margin: 1rem 0;
+            color: #e65b00;
+            font-size: 1.4rem;
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 2rem;
+            font-family: sans-serif;
+            color: rgb(124, 133, 141);
+        }
+
+        .button {
+            color: white;
+            font-size: 12px;
+            text-align: center;
+            padding: 10px 18px;
+            text-decoration: none;
+            background-color: #4caf50;
+            display: inline-block;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card-item card-item-right-image">
+            <div class="content">
+                <h1 class="title">Technology and Skills Mastery:</h1>
+                <p>Earning certifications or badges in specialized skills (e.g., coding languages, software proficiency).</p>
+                <a href="#" target="_blank" class="button">Read More</a>
+            </div>
+            <div class="image image1"></div>
+        </div>
+
+        <div class="card-item">
+            <div class="image image2"></div>
+            <div class="content">
+                <h1 class="title"> Internships and Professional Development</h1>
+                <p>
+Completing a prestigious internship or co-op program.
+Securing a job offer before graduation.
+Attending career fairs and securing multiple job interviews.
+                </p>
+                <a href="#" target="_blank" class="button">Read More</a>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="image image2"></div>
+            <div class="content">
+                <h1 class="title">  Leadership and Extracurricular Achievements:</h1>
+                <p>Holding a leadership position in a student organization or club.
+Organizing successful events or fundraisers.
+Initiating a new program or club on campus.
+Representing the college in regional or national competitions
+                </p>
+                <a href="#" target="_blank" class="button">Read More</a>
+            </div>
+        </div>
+        <div class="card-item">
+            <div class="image image2"></div>
+            <div class="content">
+                <h1 class="title">  Sustainability and Environmental Contributions</h1>
+                <p>
+Leading or participating in eco-friendly initiatives or sustainability projects.
+Promoting recycling or reducing waste on campus.
+                </p>
+                <a href="#" target="_blank" class="button">Read More</a>
+            </div>
+        </div>
+        <div class="card-item">
+            <div class="image image2"></div>
+            <div class="content">
+                <h1 class="title">Academic Milestones </h1>
+                <p>
+Dean's List Achievement for exceptional academic performance.
+Completion of a challenging course or a particularly difficult project.
+Research publication or presentation at a conference.
+Winning academic competitions or hackathons.
+                </p>
+                <a href="#" target="_blank" class="button">Read More</a>
+            </div>
+        </div>
+        <div class="card-item">
+            <div class="image image2"></div>
+            <div class="content">
+                <h1 class="title">Sports and Athletics: </h1>
+                <p>
+Achieving notable milestones in sports or athletic competitions.
+Demonstrating leadership, teamwork, and sportsmanship on and off the field.
+                </p>
+                <a href="#" target="_blank" class="button">Read More</a>
+            </div>
+        </div>
+
+
+        <!-- Repeat the structure for more card items -->
+
+    </div>
+
+</body>
+
+</html>
