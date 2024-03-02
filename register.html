@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+            color: rgb(29, 17, 17);
+            background: linear-gradient(45deg, orange, pink, purple); /* Sunset Gradient */
+            color: #fff;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: #000;
+            margin-bottom: 30px;
+        }
+
+        form {
+            width: 400px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        select {
+            width: calc(100% - 12px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        select {
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: lightcoral;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: lightsalmon;
+        }
+
+        input[type="submit"]:focus {
+            outline: none;
+        }
+        .link {
+            margin-top: 150px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <form action="welcome.html" method="post">
+        <h1>User Registration</h1>
+        <label for="name"><i class="fas fa-user"></i> Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password"><i class="fas fa-lock"></i> Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="age"><i class="fas fa-calendar-alt"></i> Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="gender"><i class="fas fa-user"></i> Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="profession"><i class="fas fa-briefcase"></i> Profession:</label>
+        <input type="text" id="profession" name="profession">
+
+        <input type="submit" value="Register" onclick="location.href='welcome.html'">
+        
+
+    </form>
+</body>
+</html>
