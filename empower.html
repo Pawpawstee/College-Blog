@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Card</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column; /* Change flex direction to column */
+            padding: 20px;
+        }
+
+        .card-item {
+            width: 100%;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            background: white;
+            transition: all 0.3s ease;
+            box-shadow: 0 20px 40px rgba(87, 84, 84, 0.328);
+            display: flex;
+            flex-direction: row; /* Change flex direction to row */
+        }
+
+        .card-item-right-image {
+            /* Image on the right side */
+            flex-direction: row-reverse; /* Reverse the order of flex items */
+        }
+        .card-item:hover {
+            box-shadow: 0 20px 40px rgba(16, 14, 14, 0.5);
+        }
+
+        .content {
+            padding: 1rem;
+            flex: 1; /* Allow content to take remaining width */
+        }
+
+        .image {
+            width: 200px; /* Set a fixed width for the image */
+            height: 150px;
+            border-top-right-radius: 8px; /* Change to top right */
+            border-bottom-right-radius: 8px; /* Change to bottom right */
+            position: relative;
+            transition: all 0.5s;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .image1 {
+            background-image: url('./christmas.jpg');
+            background-color: #e65b00;
+        }
+
+        .image2 {
+            background-image: url('./Onam.jpg');
+            background-color: #34a853;
+        }
+        .image3{
+            background-image: url('./christmas.jpg');
+            background-color: #e65b00;
+        }
+        .image4 {
+            background-image: url('./christmas.jpg');
+            background-color: #e65b00;
+        }
+        .image5 {
+            background-image: url('./christmas.jpg');
+            background-color: #e65b00;
+        }
+        .image6 {
+            background-image: url('./christmas.jpg');
+            background-color: #e65b00;
+        }
+
+        .title {
+            margin: 1rem 0;
+            color: #e65b00;
+            font-size: 1.4rem;
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 2rem;
+            font-family: sans-serif;
+            color: rgb(124, 133, 141);
+        }
+
+        .button {
+            color: white;
+            font-size: 12px;
+            text-align: center;
+            padding: 10px 18px;
+            text-decoration: none;
+            background-color: #4caf50;
+            display: inline-block;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card-item">
+            <div class="content">
+                <h1 class="title">Career Development Workshops</h1>
+                <p> Arrange workshops on resume building, job search strategies, and career planning to empower students in their professional pursuits.
+</p>
+                <a href="#" target="_blank" class="button">Read More</a>
+            </div>
+            <div class="image image1"></div>
+        </div>
+
+        <div class="card-item">
+            <div class="image image2"></div>
+            <div class="content">
+                <h1 class="title">Empowerment Talks or Panels</h1>
+                <p>
+Invite speakers or organize panel discussions on topics related to empowerment, diversity, inclusion, and personal growth.Invite speakers or organize panel discussions on topics related to empowerment, diversity, inclusion, and personal growth.
+                </p>
+                <a href="#" target="_blank" class="button">Read More</a>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="content">
+                <h1 class="title">Cultural and Diversity Celebrations</h1>
+                <p> Organize events celebrating different cultures, traditions, and diversity to promote understanding and inclusivity.
+</p>
+                <a href="#" target="_blank" class="button">Read More</a>
+            </div>
+            <div class="image image3"></div>
+        </div>
+  <div class="card-item">
+            <div class="image image4"></div>
+            <div class="content">
+                <h1 class="title">Volunteering Opportunities</h1>
+                <p>
+Connect students with local community service organizations to volunteer and make a positive impact.
+                </p>
+                <a href="#" target="_blank" class="button">Read More</a>
+            </div>
+</div>
+      <div class="card-item">
+            <div class="content">
+                <h1 class="title">Skill-Building Workshops</h1>
+                <p> Host workshops on various skills like time management, financial literacy, resume writing, and job interview skills.
+</p>
+                <a href="#" target="_blank" class="button">Read More</a>
+            </div>
+            <div class="image image5"></div>
+        </div>
+<div class="card-item">
+            <div class="image image6"></div>
+            <div class="content">
+                <h1 class="title"> Health and Wellness Programs</h1>
+                <p>
+Offer yoga sessions, meditation classes, or stress management workshops to promote mental and physical well-being
+                </p>
+                <a href="#" target="_blank" class="button">Read More</a>
+            </div>
+    </div>
+
+</body>
+
+</html>
