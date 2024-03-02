@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Additional styles for smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pics">
+        <img class="card-pic" src="https://i.pinimg.com/564x/7b/88/f0/7b88f0a1026ba66ebf869b0b7982ec9f.jpg" alt="">
+        <img class="card-pic" src="https://i.pinimg.com/564x/1e/be/35/1ebe3550923f4f4eda4f4a214d9e824a.jpg" alt="">
+        <img class="card-pic" src="https://i.pinimg.com/564x/9d/83/60/9d83601cddae841571d058513909fb9f.jpg" alt="">
+    </div>
+    <div class="promo">
+        <h1>Welcome to our campus</h1>
+        <p>We are excited to have you here at Michael Job College! Our campus is dedicated to providing a nurturing environment for learning and growth.</p>
+        <p>Explore our state-of-the-art facilities, engage with our passionate faculty, and discover a wide range of academic programs.</p>
+        <div class="social">
+            <i class="fab fa-facebook icon"></i>
+            <i class="fab fa-instagram icon"></i>
+            <i class="fab fa-twitter icon"></i>
+        </div>
+        <button><a href="explore.html">More...</a></button>
+    </div>
+    <script>
+         const anchorLinks = document.querySelectorAll('a[href^="#"]');
+        anchorLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
