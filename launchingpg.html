@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="your_integrity_code_here" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-image: url("https://images.shiksha.com/mediadata/images/1598257239phpI2GQbT.jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+        }
+        .bgimage {
+            background: linear-gradient(rgba(0, 0, 50, 0.9), rgba(173, 216, 230, 0.8)), url("BG.jpg");
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+        }
+        .menu {
+            width: 100%;
+            height: 60px;
+            background-color: rgba(0, 0, 50, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .leftmenu {
+            width: 20%;
+            display: flex;
+            justify-content: flex-start;
+            padding-left: 20px;
+        }
+        .leftmenu img {
+            width: 100px;
+            height: auto;
+        }
+        .rightmenu {
+            width: 60%;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .rightmenu ul {
+            display: flex;
+            list-style: none;
+        }
+        .rightmenu ul li {
+            margin: 0 20px;
+            font-size: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: white;
+            cursor: pointer;
+        }
+        .rightmenu ul li#firstlist {
+            color: #add8e6;
+        }
+        .rightmenu ul li:hover {
+            color: #00ccff;
+        }
+        .text {
+            text-align: center;
+            color: lightgrey;
+            margin-top: 15vh;
+        }
+        .college-name {
+            font-size: 3.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: white;
+        }
+.text1 {
+        color: blue;
+        opacity: 0; /* Start with 0 opacity */
+        animation: fadeIn 2.os ease-in-out forwards; /* Apply fade-in animation */
+    }
+
+    /* Define the fade-in animation */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 10;
+        }
+    }
+.text1 {
+        color: yellowgreen;
+        animation: blinkText 1.5s infinite; /* Apply blinking animation */
+    }
+
+    /* Define the blinking animation */
+    @keyframes blinkText {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+     
+        /* Login and Register buttons */
+        .login-register-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .login-button, .register-button {
+            background-color: rgba(173, 216, 230, 0.4);
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: none;
+            padding: 10px 20px;
+            border: 2px solid white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 0 10px;
+        }
+
+        .login-button:hover, .register-button:hover {
+            background-color: white;
+            color: #000;
+        }
+
+        /* Social icons */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            color: #fff;
+            background-color: rgba(255, 255, 255, 0.3);
+            transition: background-color 0.3s ease;
+        }
+        .social-icons a:hover {
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+        .social-icons a i {
+            font-size: 20px;
+        }
+        /* Footer */
+        .footer {
+            text-align: center;
+            color: #fff;
+            margin-top: 50px;
+        }
+          /* Explore more button */
+          .explore-button {
+            background-color: #00ccff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .explore-button:hover {
+            background-color: #005f73;
+        }
+    </style>
+</head>
+<body>
+    <div class="bgimage">
+        <div class="menu">
+            <div class="leftmenu">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiA8Pybexn8P0h4QKm-g9uuKO4yusqDMUYy5wa41EXvw&s" alt="MJC">
+            </div>
+            <div class="rightmenu">
+                <ul>
+                    <li id="firstlist">Home</li>
+                    <li>Gallery</li>
+                    <li>About Us</li>
+                </ul>
+            </div>
+        </div>
+        <div class="text">
+            <h1 class="college-name">Michael Job College Of Arts & Science For Women</h1>
+            <div class="launch-container">
+        </div>
+       <div class="text1">
+        <h1>Welcome to MJC</h1>
+    </div>
+            <div class="login-register-buttons">
+                <button class="login-button" onclick="location.href='loginpg.html'">Login</button>
+                <button class="register-button" onclick="location.href='register.html'">Register</button>
+            </div>
+    <br><br><br><br>
+         <div>
+          <!-- Explore more button -->
+            <button class="explore-button" onclick="location.href='loginpg.html'">Explore more!</button>
+        </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/michaeljobcolg/"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/mjc.college/"><i class="fab fa-instagram"></i></a>
+            </div>
+        <div class="footer">
+            <p>@2023 Limited</p>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/your_font_awesome_kit.js" crossorigin="anonymous"></script>
+</body>
+</html>
