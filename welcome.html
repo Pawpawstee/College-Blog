@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>welcome page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+</head>
+<body>
+    <style>
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+        @import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+        @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+*      {
+    font-family: 'Ubuntu', sans-serif;
+       }
+       
+       header {
+               width: 100%;
+               position: fixed;
+               z-index: 1;
+              }
+nav > div {
+    padding: 1rem 0;
+    backdrop-filter: blur(35px);
+    background-color: #ffffff2b;
+    border-radius: 50rem;
+}
+.radius-50 {
+    border-radius: 1rem;
+}
+.collapse:not(.show) 
+.nav-link {
+    font-size: 1.1rem;
+    color: #FFFFFF !important;
+    padding: 0 1.5rem !important;
+}
+
+.menu:focus {
+    box-shadow: none;
+}
+.menu i {
+    color: #fff;
+    font-size: 1.8rem;
+}
+.logo h1 {
+    font-size: 1.8rem !important;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.blur-video {
+    filter: blur(5px); /* Change the '5px' value as needed for the desired blur intensity */
+  }
+.video {
+    height: 100vh;
+}
+
+.video video {
+    position: center
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: contrast(1.2);
+}
+
+
+.detail {
+    position: fixed;
+    bottom: 4rem;
+    text-align: center;
+}
+
+.detail,
+.detail a {
+    color: #FFFFFF;
+}
+
+.detail p {
+    font-size: 55px;
+}
+
+.detail a {
+    font-size: 20px;
+}
+
+.detail .arrow {
+    font-size: 20px;
+    animation: arrow 1s infinite;
+    transition: all .3s ease;
+}
+/* Footer */
+.footer {
+            padding: 500px;
+            text-align: center;
+            color: #fff;
+            margin-top: 50px;
+            position: absolute;
+            top: 50%
+        }
+        
+.footer_content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2rem 0;
+  grid-gap: 2.5rem;
+}
+
+.footer_headings {
+  color: #000;
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+.footer_headings::after {
+  content: "";
+  height: 3px;
+  background: #e74c3c;
+  width: 25%;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+}
+st_section img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+.first_section p {
+  padding: 1.5rem 0;
+  text-align: justify;
+}
+
+.social_icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social_icons i {
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: #ddd;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  transform: translateY(0);
+  transition: all 0.5s ease-in-out;
+  color: #1c2833;
+}
+
+.social_icons i:hover {
+  transform: translateY(-5px);
+}
+
+/* second sections */
+.second_section ul {
+  list-style: none;
+}
+
+.second_section ul li {
+  margin: 1rem 0;
+}
+
+.second_section ul li:first-child {
+  margin-top: 0;
+}
+
+/* third section */
+.third_section ul {
+  list-style: none;
+}
+
+.third_section ul li {
+  margin: 1rem 0;
+  display: flex;
+}
+
+.third_section ul li:first-child {
+  margin-top: 0;
+}
+
+.third_section ul li i {
+  margin-right: 10px;
+  background: #ddd;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.third_section span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* fourth section */
+.form_control input,
+textarea {
+  outline: none;
+  border: none;
+  border: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.fourth_section button {
+  display: block;
+  width: 100%;
+  outline: none;
+  background: #e74c3c;
+  border: none;
+  color: #fff;
+  padding: 0.6rem 0;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.footer_txt {
+  background: #f0f3f4;
+  padding: 1.1rem 0;
+  text-align: center;
+  box-shadow: -5px -0px 2px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 768px) {
+  body {
+    min-height: 50vh;
+  }
+
+  .footer_content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+    padding: 3rem 0;
+  }
+
+  .social_icons i {
+    font-size: 1.3rem;
+    width: 45px;
+    height: 45px;
+  }
+
+  footer {
+    position: absolute;
+    top: 50%;
+  }
+
+  .container h2 {
+    font-size: 4rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media (max-width: 568px) {
+  .footer_content {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 3rem;
+    padding: 2.5rem 0;
+  }
+
+  .container h2 {
+    font-size: 3rem;
+    padding-bottom: 4rem;
+  }
+
+  .social_icons i {
+    font-size: 1rem;
+    width: 35px;
+    height: 35px;
+  }
+
+  footer {
+    position: absolute;
+    top: 30%;
+  }
+}
+
+@keyframes arrow {
+    0% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+       
+ </style>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-transparent mt-2">
+            <div class="container-fluid container-lg" id="round-onclick">
+                <a class="logo d-lg-none d-block text-decoration-none" href="#">
+                    <h1>Michael Job Centre</h1>
+                </a>
+                <button class="navbar-toggler menu border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list" id="menu"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="welcome.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Service</a>
+                        </li>
+                    </ul>
+                    <a class="logo d-lg-block text-decoration-none d-none" href="#">
+                        <h1>Michael job college of arts and science for women</h1>
+                    </a>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Review</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Enquire</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Admission</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="video position-relative">
+        <video autoplay muted loop id="myVideo" class="blur-video">
+            <source src="C:\Users\tzimi\Videos\college.mp4" type="video/mp4">
+        </video>
+        <div class="d-flex justify-content-center">
+            <div class="detail" style="display: center;">
+                <p class="mb-3">welcome to our campus</p>
+                <hr class="mb-3">
+                <a href="welcometomjc.html" class="scroll-down text-decoration-none fw-normal">
+                    DISCOVER MORE
+                </a>
+                <div class="arrow mt-4"><i class="bi bi-chevron-down"></i></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+          <div class="footer_content">
+            <div class="first_section">
+              <h3 class="footer_headings">About Us</h3>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHwqvGjJzCO_dDFo8NSuBWvCnx19MRaIpjZrhJ7xUAbQ&s" alt="logo" />
+              <p>
+            Michael Job College of Arts & Science for Women was established in 2004 and is approved by Tamil Nadu Government Collegiate Education and is affiliated to Bharathiar University.
+              </p>
+              <div class="social_icons">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-pinterest"></i>
+                <i class="bi bi-youtube"></i>
+              </div>
+            </div>
+            <div class="second_section">
+              <h3 class="footer_headings">Useful links</h3>
+              <ul>
+                <li><a href="welcome.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="coursedetails.html">Admission</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="third_section">
+              <h3 class="footer_headings">Address</h3>
+              <ul>
+                <li>
+                  <i class="bi bi-envelope"></i>
+                  <span>mjc.ac.in</span>
+                </li>
+                <li>
+                  <i class="bi bi-geo-alt"></i>
+                  <span>Michael & Jhon job center Boat lake,ravathur rd,sulur,tamilnadu</span>
+                </li>
+  
+                <li>
+                  <i class="bi bi-telephone"></i>
+                  <span>785412636</span>
+                </li>
+              </ul>
+            </div>
+            <div class="fourth_section">
+              <h3 class="footer_headings">Contact Us</h3>
+              <form action="#">
+                <div class="form_control">
+                  <input type="text" placeholder="Enter an Email" />
+                </div>
+                <div class="form_control">
+                  <textarea
+                    name=""
+                    id=""
+                    cols="10"
+                    rows="5"
+                    placeholder="Write Message....."
+                  ></textarea>
+                </div>
+                <button type="button">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="footer_txt">
+          <p>
+            All rights reservered by
+            <a href="https://www.mjc.com">MJCAS</a> &copy; 2023.
+          </p>
+        </div>
+      </footer>
+</body>
+</html>
